@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Banner and dark fade (DIV) */
+
+#banner_img {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+.dark_fade_banner {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.521);
+    top: 0;
+    position: fixed;
+}
+
+
+/* NAV BAR SECTION */
+
+.nav_bar {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_container {
+    position: absolute;
+    left: 10vw;
+    margin-top: 20px;
+}
+
+.logo {
+    font-size: 23px;
+    text-decoration: none;
+    font-weight: 600;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.logo_color1 {
+    color: white;
+}
+
+.logo_color2 {
+    color: rgb(255, 175, 25);
+}
+
+
+/*$$$$$$$$$$$$$$$$$$$$$$$$ NAV Links $$$$$$$$$$$$$$$$$ */
+
+.nav_links_container {
+    position: absolute;
+    right: 10vw;
+    width: 30vw;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    z-index: 2;
+}
+
+.nav_link {
+    color: white;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.nav_link:hover {
+    color: rgb(255, 175, 25);
+    transition: 0.5s;
+}
+
+.text_container {
+    /* background-color: tomato; */
+    position: fixed;
+    width: 37vw;
+    height: 70%;
+    z-index: 1;
+    top: 20vh;
+    left: 0;
+    display: flex;
+    flex-flow: column;
+}
+
+
+/* WELCOME CONTAINER */
+
+.text_innerContainer {
+    width: 100%;
+    /* background-color: royalblue; */
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.Wel span {
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0 19vw 0 0;
+}
+
+.Wel {
+    margin-top: 20vh;
+}
+
+
+/* Description in Welcome text container */
+
+.Des {
+    width: 80%;
+    margin-top: 1vh;
+    /* background-color: yellow; */
+}
+
+.Des span {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/* BUTTONS IN Welcome */
+
+.btn_container {
+    display: flex;
+    width: 27vw;
+    /* background-color: violet; */
+    margin: 5vh 0 0 3vw;
+}
+
+.welcomeBtn {
+    width: 120px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0 0 0 3vw;
+    font-weight: 500;
+}
+
+.startUpbtn {
+    background-color: transparent;
+    border: 1px solid rgba(163, 112, 17, 0.801);
+    box-shadow: inset 0px #f9c506;
+    cursor: pointer;
+    color: rgb(243, 168, 29);
+    transition: .5s;
+}
+
+.startUpbtn:hover {
+    box-shadow: inset 120px 0 0 0 rgb(255, 175, 25);
+}
+
+.aboutUsbtn {
+    background-color: rgb(255, 175, 25);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.aboutUsbtn:hover {
+    background-color: transparent;
+    border: 1px solid rgb(255, 175, 25);
+}
